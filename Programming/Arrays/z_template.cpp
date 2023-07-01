@@ -1,2 +1,2 @@
-// Problem Name: Code
+// Problem Name: 
 // Problem Link: 
