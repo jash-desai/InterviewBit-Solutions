@@ -23,8 +23,8 @@ bool fxn(int s, int d) {
     return 0;
 }
 int Solution::solve(int V, vector<vector<int>>&m){
-    init();
-    for(auto &v: m) adj[v[0]].push_back(v[1]);
-    return (fxn(1,V));
+  init();
+  for(auto &v: m) adj[v[0]].push_back(v[1]);
+  return (fxn(1,V));
 }
 
