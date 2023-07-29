@@ -4,8 +4,8 @@
 int rec(const vector<int> &b, const vector<int> &c, int n, int k, vector<vector<int>> &dp){
     if(n==0 or k<0) return INT_MAX;
     if(k==0) return 0;
-    if(n==1 and b[n-1]>k) return dp[n][k] = INT_MAX;
     if(dp[n][k] != -1) return dp[n][k];
+    if(n==1 and b[n-1]>k) return dp[n][k] = INT_MAX;
     if(b[n-1]>k) return dp[n][k] = rec(b,c,n-1,k,dp);
     int ans1 = rec(b,c,n-1,k,dp);
     int ans2 = rec(b,c,n,k-b[n-1],dp);
